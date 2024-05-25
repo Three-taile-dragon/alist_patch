@@ -332,9 +332,7 @@ func (xc *XunLeiXCommon) Offline(ctx context.Context, args model.OtherArgs) (int
 			"parent_id":   args.Obj.GetID(),
 			"upload_type": "UPLOAD_TYPE_URL",
 			"url": &base.Json{
-				"url":       args.Data,
-				"params":    "{}",
-				"parent_id": args.Obj.GetID(),
+				"url": args.Data,
 			},
 		})
 	}, nil)
